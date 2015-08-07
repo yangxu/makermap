@@ -137,7 +137,11 @@ get_tweets();
 setInterval(get_tweets, 10*1000);
 
 app.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index',{mapbox_accessToken:config.mapbox.access_token});
+});
+
+app.get('/feed', function(req, res, next) {
+  res.render('feed');
 });
 
 app.get('/login',

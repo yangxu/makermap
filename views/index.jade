@@ -49,7 +49,7 @@ html
         <a class="github-button" href="https://github.com/codeisland" data-style="mega" data-count-href="/codeisland/followers" data-count-api="/users/codeisland#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @codeisland on GitHub">Follow @codeisland</a>
     #map
     script.
-      L.mapbox.accessToken = '';
+      L.mapbox.accessToken = '#{mapbox_accessToken}';
       var map = L.mapbox.map('map', 'mapbox.streets', {
       //minZoom: 8,
       maxZoom: 14
